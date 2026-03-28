@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>백엔드 개발자 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- SVG symbols (hidden) for reusable icons -->
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      focusable="false"
+    >
+      <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+        <polygon points="12,18.9282 4,5.0718 20,5.0718" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-chevron-up" viewBox="0 0 24 24">
+        <polygon points="12,5.0718 4,18.9282 20,18.9282" fill="currentColor" />
+      </symbol>
+    </svg>
+    <!-- 네비게이션 -->
+    <nav class="nav" id="nav">
+      <div class="nav-container">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-menu">
+          <li><a href="#about">소개</a></li>
+          <li><a href="#highlights">핵심 역량</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#awards">수상</a></li>
+          <li><a href="#activities">활동</a></li>
+          <li><a href="#timeline">전체 이력</a></li>
+          <li><a href="#links">링크</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- 프로젝트 섹션 -->
+      <section id="projects" class="section">
+        <h2 class="section-title">프로젝트</h2>
+        <div class="cards-container">
+          <!-- 프로젝트 1 -->
+
+          <!-- 프로젝트 2 -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title">ESG 배출 데이터 대시보드</h3>
+              <div class="card-meta">
+                <span class="card-date">2025.01</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-badge">부트캠프</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">4명</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">백엔드/프론트엔드</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item"
+                  >Django · Handsontable · Chart.js</span
+                >
+              </div>
+              <div class="card-link">
+                <a
+                  href="https://github.com/esg-bitcamp-team3/front"
+                  target="_blank"
+                  >GitHub 저장소</a
+                >
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="project-info">
+                <div class="card-section">
+                  <h4 class="subsection-title">Project Description</h4>
+                  <p class="desc-lead">
+                    ESG 배출량 데이터를 기업·사업장 단위로 관리하고, 계산 결과와
+                    수정 이력을 함께 추적할 수 있는 ESG 대시보드 서비스입니다.
+                  </p>
+                </div>
+                <div class="card-section">
+                  <h4 class="subsection-title">Key Features</h4>
+                  <ul class="bullet-list">
+                    <li>기업·사업장 단위의 배출량 데이터 관리 및 조회</li>
+                    <li>Scope(1/2/3) 기준 배출량 계산 및 시각화</li>
+                    <li>배출 데이터 일괄 입력·수정 지원</li>
+                    <li>배출량 수정 이력 추적을 통한 데이터 신뢰성 확보</li>
+                    <li>대시보드 기반의 배출 현황 요약 제공</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-media-2col">
+                <div class="device desktop">
+                  <div class="top-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="screen">
+                    <img src="img/pj2_img_4 복사본 3.png" alt="웹 화면" />
+                  </div>
+                </div>
+                <div class="device desktop">
+                  <div class="top-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="screen">
+                    <img src="img/pj2_img_4.png" alt="웹 화면" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-section">
+                <h4 class="subsection-title">My Contribution</h4>
+                <p style="margin-bottom: 0.5rem">
+                  <strong>Backend</strong>
+                </p>
+                <ul class="bullet-list" style="margin-bottom: 1rem">
+                  <li>서비스 전반의 백엔드 개발 주도</li>
+                  <li>기업·사업장·배출 데이터·계산·수정 이력에 대한 DB 설계</li>
+                  <li>배출량 계산 로직 및 관련 API 구현</li>
+                  <li>
+                    배출 데이터 수정 시 원본과 이력을 함께 관리하는 API 설계
+                  </li>
+                </ul>
+                <p style="margin-bottom: 0.5rem">
+                  <strong>Frontend</strong>
+                </p>
+                <ul class="bullet-list">
+                  <li>Handsontable 기반 배출 데이터 입력·편집 화면 구현</li>
+                  <li>
+                    Chakra UI를 활용한 메인·대시보드·기업·사업장 페이지 개발
+                  </li>
+                  <li>Chart.js를 이용한 Scope별 배출량 시각화</li>
+                </ul>
+              </div>
+
+              <div class="card-section">
+                <div>
+                  <h4 class="subsection-title">
+                    Challenge 1: 배출 데이터 수정 내역 문제
+                  </h4>
+                  <div class="problem-content">
+                    <h5 class="problem-subtitle">Problem</h5>
+                    <p class="problem-text">
+                      배출 데이터가 반복적으로 수정되지만, 누가·언제·무엇을
+                      변경했는지를 추적할 수 있는 구조가 없어 책임 소재와 감사
+                      대응이 어려웠다. 또한 잦은 수정 과정에서 원본 데이터와
+                      대시보드의 계산 결과 사이에 정합성 불일치가 발생할 위험이
+                      있었다.
+                    </p>
+
+                    <h5 class="problem-subtitle">Approach</h5>
+                    <p class="problem-text">
+                      배출 데이터를 원본 데이터와 수정 이력으로 분리된 구조로
+                      재설계하고, 모든 수정 요청 시 변경 전/후 값, 사용자,
+                      시점을 기록하도록 API를 구현했다. 수정 이후에는 배출량
+                      재계산 로직을 자동으로 호출해 원본 데이터, 이력, 대시보드
+                      값이 일관되게 유지되도록 처리 흐름을 구성했다.
+                    </p>
+
+                    <h5 class="problem-subtitle">Result</h5>
+                    <p class="problem-text">
+                      수정 내역을 명확하게 추적할 수 있는 구조가 확보되어 데이터
+                      신뢰성이 향상되었다. 원본·계산·시각화 결과가 일관되게
+                      유지되어 검증과 감사 대응이 가능한 수준의 데이터 품질을
+                      달성했다.
+                    </p>
+                  </div>
+
+                  <h4 class="subsection-title" style="margin-top: 1.5rem">
+                    Challenge 2: 대용량 테이블 입력 + 계산 구조화
+                  </h4>
+                  <div class="problem-content">
+                    <h5 class="problem-subtitle">Problem</h5>
+                    <p class="problem-text">
+                      Handsontable 기반의 엑셀 형태 입력을 통해 대량의 배출
+                      데이터를 처리해야 했고, 이를 바탕으로 Scope1·2·3 배출량
+                      계산이 이루어져야 했다. 셀 단위로 서버를 호출하거나
+                      프론트에서 계산을 수행할 경우 API 호출 과다, 계산 로직
+                      중복, 데이터 조작 가능성, 성능 저하 문제가 발생할 가능성이
+                      있었다.
+                    </p>
+
+                    <h5 class="problem-subtitle">Approach</h5>
+                    <p class="problem-text">
+                      프론트는 데이터 입력과 수정만 담당하도록 역할을 분리하고,
+                      변경된 행만 모아 한 번에 전송하는 Bulk 저장 방식으로 API를
+                      설계했다. 서버에서는 저장된 데이터를 기준으로 일괄 계산
+                      로직을 수행하며, 계산된 결과는 별도의 조회·집계 API에서
+                      사용되도록 입력–계산–조회 단계를 구조적으로 분리했다.
+                    </p>
+
+                    <h5 class="problem-subtitle">Result</h5>
+                    <p class="problem-text">
+                      대량 입력 환경에서도 안정적으로 저장·계산 처리가
+                      가능해졌고, API 호출 수 감소로 성능이 개선되었다. 계산
+                      책임을 서버로 일원화하여 로직 일관성과 데이터 신뢰성을
+                      확보했으며, 대시보드는 집계된 데이터만 조회해 빠르게
+                      렌더링되는 구조가 완성되었다.
+                    </p>
+                  </div>
+                </div>
+                <div class="diagram-container">
+                  <div class="diagram-caption-container">
+                    <img
+                      src="img/pj2_img_3.png"
+                      alt="종목 관계 그래프"
+                      class="diagram-img"
+                    />
+
+                    <p class="diagram-caption">
+                      <svg
+                        class="icon icon-chev icon-chev-up"
+                        aria-hidden="true"
+                        width="14"
+                        height="14"
+                        focusable="false"
+                      >
+                        <use href="#icon-chevron-up"></use>
+                      </svg>
+                      종목 관계 그래프 예시
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
