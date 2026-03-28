@@ -29,6 +29,19 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 부드러운 스크롤 */
+* {
+  scroll-margin-top: 80px;
+}
+
+/* 선택 영역 색상 */
+::selection {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: var(--text-dark);
 }
 
 /* 네비게이션 */
@@ -981,8 +994,10 @@ body {
 /* 푸터 */
 .footer {
   text-align: center;
-  padding: 32px 24px;
+  padding: 48px 24px;
+  margin-top: 64px;
   border-top: 1px solid var(--border-color);
+  background-color: var(--bg-gray);
   color: var(--text-light);
   font-size: 14px;
 }
@@ -1003,6 +1018,335 @@ body {
 
 .icon use {
   pointer-events: none;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ======================================== */
+
+/* 모바일 기본 스타일 (0px ~ 767px) */
+@media screen and (max-width: 767px) {
+  /* 컨테이너 및 섹션 */
+  .container {
+    padding: 24px 16px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* 네비게이션 */
+  .nav-container {
+    padding: 0 16px;
+    height: 56px;
+  }
+
+  .nav-brand {
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    gap: 4px;
+  }
+
+  .nav-menu li a {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  /* 프로필 헤더 */
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 16px 0;
+  }
+
+  .profile-photo-placeholder {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-name {
+    font-size: 28px;
+  }
+
+  .profile-contacts {
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .profile-contacts li {
+    font-size: 12px;
+  }
+
+  /* 프로필 추가 정보 */
+  .profile-extra-grid {
+    gap: 20px;
+    padding-top: 16px;
+  }
+
+  .profile-extra-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .extra-meta {
+    text-align: left;
+  }
+
+  .extra-desc {
+    font-size: 11px;
+  }
+
+  /* 카드 */
+  .card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .card-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-meta {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .card-date,
+  .card-badge,
+  .card-meta-item {
+    font-size: 12px;
+  }
+
+  /* 프로젝트 레이아웃 */
+  .project-layout,
+  .project-layout-4060,
+  .project-layout-6040 {
+    gap: 16px;
+  }
+
+  /* 프로젝트 이미지 */
+  .project-media-2col {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .project-media-2col .device + .device {
+    transform: translateY(0);
+  }
+
+  .device.mobile {
+    width: 180px;
+    padding: 10px;
+    border-radius: 28px;
+  }
+
+  .device.mobile::before {
+    width: 70px;
+    height: 14px;
+  }
+
+  .device.mobile .screen {
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .cards-container .card:nth-of-type(odd) .project-media-full .device + .device {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+
+  .project-media-full .device:first-child {
+    max-width: 100%;
+  }
+
+  /* 챌린지 타이틀 */
+  .challenge-title {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+
+  /* 두 컬럼 레이아웃을 모바일에서는 1컬럼으로 */
+  .row {
+    flex-direction: column;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  /* 다이어그램 */
+  .diagram-img,
+  .pipeline-img {
+    padding: 8px;
+  }
+
+  .diagram-caption,
+  .pipeline-caption {
+    font-size: 11px;
+  }
+
+  /* 리스트 */
+  .bullet-list li,
+  .problem-list li {
+    font-size: 13px;
+    padding-left: 16px;
+  }
+
+  .problem-subtitle,
+  .subsection-title {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  .desc-lead {
+    font-size: 14px;
+  }
+
+  .desc-sub {
+    font-size: 12px;
+  }
+
+  /* 하이라이트 그리드 */
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* 링크 컨테이너 */
+  .links-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* 타임라인 */
+  .timeline-container {
+    padding-left: 24px;
+  }
+
+  .timeline-marker {
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-title {
+    font-size: 15px;
+  }
+}
+
+/* 태블릿 스타일 (768px ~ 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 32px 24px;
+  }
+
+  .profile-header {
+    gap: 32px;
+  }
+
+  .profile-photo-placeholder {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profile-name {
+    font-size: 32px;
+  }
+
+  /* 프로젝트 이미지 */
+  .project-media-2col {
+    max-width: 400px;
+    gap: 14px;
+  }
+
+  .device.mobile {
+    width: 200px;
+  }
+
+  /* 하이라이트 그리드 */
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 두 컬럼 레이아웃 유지 */
+  .row {
+    display: flex;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+}
+
+/* 데스크톱 스타일 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+  /* 이미지 호버 효과 */
+  .device.mobile,
+  .device.desktop {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .device.mobile:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 12px 32px rgba(0, 0, 0, 0.32),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+
+  .device.desktop:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.12),
+      0 4px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* 카드 호버 효과 강화 */
+  .card {
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+  }
+
+  /* 링크 호버 효과 */
+  .link-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* 큰 화면 최적화 (1400px 이상) */
+@media screen and (min-width: 1400px) {
+  :root {
+    --container-width: 1200px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
 }
 
 @media print {
