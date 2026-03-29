@@ -1,61 +1,83 @@
-// 스크롤 시 네비게이션 하이라이트
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".section");
+  // ===== 스크롤 애니메이션 =====
+  const revealEls = document.querySelectorAll("[data-reveal]");
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  revealEls.forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 4) * 0.08}s`;
+    revealObserver.observe(el);
+  });
+
+  // ===== 네비게이션 active 상태 =====
+  const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-menu a");
 
-  // 현재 뷰포트에 있는 섹션을 찾아 네비게이션 하이라이트
-  function highlightNavigation() {
-    let currentSection = "";
+  const navObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.toggle(
+              "active",
+              link.getAttribute("href") === `#${id}`
+            );
+          });
+        }
+      });
+    },
+    { rootMargin: `-${64}px 0px -60% 0px` }
+  );
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
+  sections.forEach((s) => navObserver.observe(s));
 
-      if (window.pageYOffset >= sectionTop - 100) {
-        currentSection = section.getAttribute("id");
-      }
+  // ===== 모바일 메뉴 토글 =====
+  const navToggle = document.getElementById("navToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
     });
 
-    navLinks.forEach((link) => {
-      link.style.color = "";
-      link.style.backgroundColor = "";
-
-      if (link.getAttribute("href") === "#" + currentSection) {
-        link.style.color = "var(--primary-color)";
-        link.style.backgroundColor = "var(--bg-gray)";
-      }
+    navMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+      });
     });
   }
 
-  // 스크롤 이벤트 리스너
-  window.addEventListener("scroll", highlightNavigation);
-
-  // 초기 실행
-  highlightNavigation();
-
-  // 부드러운 스크롤 (이미 CSS에서 처리되지만 추가 제어)
-  navLinks.forEach((link) => {
+  // ===== 부드러운 스크롤 (앵커 클릭) =====
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href");
-      const targetSection = document.querySelector(targetId);
-
-      if (targetSection) {
-        const offsetTop = targetSection.offsetTop - 70;
-        window.scrollTo({
-          top: offsetTop,
-          behavior: "smooth",
-        });
+      const href = this.getAttribute("href");
+      if (href === "#") return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: "smooth" });
       }
     });
   });
 
-  // 프린트 전 준비 (옵션)
-  window.addEventListener("beforeprint", function () {
-    console.log("포트폴리오를 PDF로 출력합니다...");
-  });
-
-  window.addEventListener("afterprint", function () {
-    console.log("PDF 출력이 완료되었습니다.");
+  // ===== 네비게이션 스크롤 시 shadow =====
+  const nav = document.getElementById("nav");
+  window.addEventListener("scroll", () => {
+    if (nav) {
+      nav.style.boxShadow =
+        window.scrollY > 10 ? "0 2px 16px rgba(0,0,0,.08)" : "none";
+    }
   });
 });

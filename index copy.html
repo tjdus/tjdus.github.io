@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>백엔드 개발자 포트폴리오</title>
+    <title>이서연 포트폴리오</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -26,186 +26,591 @@
         <div class="nav-brand">Portfolio</div>
         <ul class="nav-menu">
           <li><a href="#about">소개</a></li>
-          <li><a href="#highlights">핵심 역량</a></li>
           <li><a href="#projects">프로젝트</a></li>
-          <li><a href="#awards">수상</a></li>
-          <li><a href="#activities">활동</a></li>
-          <li><a href="#timeline">전체 이력</a></li>
-          <li><a href="#links">링크</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="container">
+      <!-- 소개 섹션 -->
+      <section id="about" class="section">
+        <h2 class="section-title">소개</h2>
+        <div class="profile-header">
+          <div class="profile-photo-area">
+            <div class="profile-photo-placeholder">
+              <img src="img/사진.jpg" alt="이서연" />
+            </div>
+          </div>
+          <div class="profile-info">
+            <h1 class="profile-name">이서연</h1>
+            <ul class="profile-contacts">
+              <li>
+                <a href="mailto:dusml0277@gmail.com">dusml0277@gmail.com</a>
+              </li>
+              <li>
+                <a href="https://github.com/tjdus" target="_blank"
+                  >github.com/tjdus</a
+                >
+              </li>
+              <li>010-6671-0277</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 경력 / 수상 / 활동 -->
+        <div class="profile-extra-grid">
+          <div class="profile-extra-block">
+            <h4 class="profile-extra-title">학력</h4>
+            <ul class="profile-extra-list">
+              <li>
+                <span class="extra-name">서강대학교 컴퓨터공학과</span>
+                <span class="extra-meta">2022.02 — 2026.08 졸업예정</span>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-extra-block">
+            <h4 class="profile-extra-title">자격증</h4>
+            <ul class="profile-extra-list">
+              <li>
+                <span class="extra-name">정보처리기사</span>
+                <span class="extra-meta">한국산업인력공단 · 2025.09</span>
+              </li>
+              <li>
+                <span class="extra-name">SQLD</span>
+                <span class="extra-meta">한국데이터산업진흥원 · 2024.06</span>
+              </li>
+              <li>
+                <span class="extra-name">TOPCIT 수준 4</span>
+                <span class="extra-meta">정보통신기획평가원 · 2025.11</span>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-extra-block">
+            <h4 class="profile-extra-title">경력</h4>
+            <ul class="profile-extra-list">
+              <li>
+                <span class="extra-name"
+                  >DHL Korea — Customer Facing IT팀 인턴</span
+                >
+                <span class="extra-meta">2026.01 — 2026.03</span>
+              </li>
+              <li style="display: block; margin-top: 2px">
+                <span class="extra-desc"
+                  >글로벌 물류 플랫폼 운영 중 <strong>고객 VOC 및 시스템 이슈 관리</strong>
+                  <br />
+                  <strong>요구사항 정리 및 이슈 처리 현황 추적</strong>
+                  <br />
+                  반복 문의 분석을 통한 플랫폼 사용 가이드 제작·배포로 운영 대응
+                  효율 개선</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="profile-extra-block">
+            <h4 class="profile-extra-title">수상</h4>
+            <ul class="profile-extra-list">
+              <li>
+                <span class="extra-name">SKKU GDG RE:ALThon</span>
+                <span class="extra-meta">최우수상 · 2025.11</span>
+              </li>
+              <li>
+                <span class="extra-name">2025 AI Workflow Hackathon</span>
+                <span class="extra-meta">장려상 · 2025.11</span>
+              </li>
+              <li>
+                <span class="extra-name">GDG on Sogang Hurdlethon</span>
+                <span class="extra-meta">우수상 · 2024.11</span>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-extra-block">
+            <h4 class="profile-extra-title">활동</h4>
+            <ul class="profile-extra-list">
+              <li>
+                <div class="extra-tag-wrap">
+                  <span class="extra-tag">멘토링</span
+                  ><span class="extra-name">블로그 백엔드 만들기</span>
+                </div>
+                <span class="extra-meta">2025.11</span>
+              </li>
+              <li>
+                <div class="extra-tag-wrap">
+                  <span class="extra-tag">강의</span
+                  ><span class="extra-name">백엔드 기초 완성 로드맵</span>
+                </div>
+                <span class="extra-meta">2025.11</span>
+              </li>
+              <li>
+                <div class="extra-tag-wrap">
+                  <span class="extra-tag">강의</span
+                  ><span class="extra-name">DRF로 백엔드 만들기</span>
+                </div>
+                <span class="extra-meta">2025.07</span>
+              </li>
+              <li>
+                <div class="extra-tag-wrap">
+                  <span class="extra-tag">강의</span
+                  ><span class="extra-name">Django 수강신청 서비스 만들기</span>
+                </div>
+                <span class="extra-meta">2024.09</span>
+              </li>
+              <li>
+                <div class="extra-tag-wrap">
+                  <span class="extra-tag">학회</span
+                  ><span class="extra-name">컴퓨터학회 CNU 부학회장</span>
+                </div>
+                <span class="extra-meta">2024.11 — 2025.11</span>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-extra-block">
+            <h4 class="profile-extra-title">교육</h4>
+            <ul class="profile-extra-list">
+              <li>
+                <span class="extra-name">Sogang Dev@Works 2026</span>
+                <span class="extra-meta">2025.02</span>
+                <span class="extra-desc">
+                  <strong>Python 기반 멀티 에이전트 시스템</strong>을 활용한 프롬프트 성능 평가
+                  및 고도화
+                </span>
+              </li>
+
+              <li>
+                <span class="extra-name"
+                  >[삼정KPMG] ESG 데이터 활용 풀스택 과정</span
+                >
+                <span class="extra-meta">2025.01 — 2025.07</span>
+                <span class="extra-desc"
+                  ><strong>ESG 데이터 관리 대시보드 시각화 웹 애플리케이션 개발</strong>
+                  <br />
+                  <strong>Next.js, Spring Boot</strong> 학습 · <strong>Docker, Jenkins, Kubernetes</strong> 기반
+                  클라우드 CI/CD 학습</span
+                >
+              </li>
+              <li>
+                <span class="extra-name">Codepresso Learnathon</span>
+                <span class="extra-meta">2024.02</span>
+                <span class="extra-desc"
+                  >Spring Boot 웹 프레임워크 · SQL 학습</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <!-- 프로젝트 섹션 -->
       <section id="projects" class="section">
         <h2 class="section-title">프로젝트</h2>
         <div class="cards-container">
           <!-- 프로젝트 1 -->
-
-          <!-- 프로젝트 2 -->
           <article class="card">
             <div class="card-header">
-              <h3 class="card-title">ESG 배출 데이터 대시보드</h3>
+              <div class="card-title-row">
+                <h3 class="card-title">학회 관리 플랫폼 CNU&U</h3>
+                <div class="card-link">
+                  <a href="https://cnu-nu.com" target="_blank"
+                    >서비스 바로가기</a
+                  >
+                </div>
+              </div>
               <div class="card-meta">
-                <span class="card-date">2025.01</span>
+                <span class="card-date">2026.1–2026.2</span>
                 <span class="card-meta-divider">·</span>
-                <span class="card-badge">부트캠프</span>
-                <span class="card-meta-divider">·</span>
-                <span class="card-meta-item">4명</span>
+                <span class="card-badge">1인 개발</span>
                 <span class="card-meta-divider">·</span>
                 <span class="card-meta-item">백엔드/프론트엔드</span>
                 <span class="card-meta-divider">·</span>
                 <span class="card-meta-item"
-                  >Django · Handsontable · Chart.js</span
-                >
-              </div>
-              <div class="card-link">
-                <a
-                  href="https://github.com/esg-bitcamp-team3/front"
-                  target="_blank"
-                  >GitHub 저장소</a
+                  >Spring Boot · Next.js · PostgreSQL</span
                 >
               </div>
             </div>
 
             <div class="card-body">
-              <div class="project-info">
-                <div class="card-section">
-                  <h4 class="subsection-title">Project Description</h4>
-                  <p class="desc-lead">
-                    ESG 배출량 데이터를 기업·사업장 단위로 관리하고, 계산 결과와
-                    수정 이력을 함께 추적할 수 있는 ESG 대시보드 서비스입니다.
+              <div class="project-layout">
+                <div class="project-info">
+                  <div class="card-section">
+                    <h4 class="subsection-title">프로젝트 개요</h4>
+                    <p class="desc-lead">
+                      노션, 구글폼, 디스코드 등에 분산되어 있던 학회 운영
+                      데이터를 통합하고,
+                      <br />
+                      <strong>모집·신청·활동 관리를 하나의 서비스로 통합</strong>한 학회 관리 웹
+                      서비스입니다.
+                    </p>
+                  </div>
+                  <div class="card-section">
+                    <h4 class="subsection-title">주요 기능</h4>
+                    <ul class="bullet-list">
+                      <li>학회원 관리 및 학기별 활동 관리</li>
+                      <li>모집 공고 및 신청 관리</li>
+                      <li>신청 응답 통계 및 관리 기능</li>
+                      <li>활동 회차별 출석 관리 및 수료 여부 확인</li>
+                    </ul>
+                  </div>
+                  <div class="card-section">
+                    <h4 class="subsection-title">기여 내용</h4>
+                    <ul class="bullet-list">
+                      <li>
+                        학회원·활동·신청·모집 데이터를 관리하는 DB 스키마 설계
+                      </li>
+                      <li>
+                        모집, 신청, 활동 관리 기능을 포함한 전체 서비스 개발
+                      </li>
+                      <li>회차별 출석 관리 및 활동 수료 여부 확인 기능 구현</li>
+                      <li>신청 응답 통계 및 관리 기능 구현</li>
+                      <li>실제 학회 운영에 서비스 적용 및 운영</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="device desktop"
+                    style="width: 60%; margin: 0 auto"
+                  >
+                    <div class="top-bar">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="screen">
+                      <img src="img/recruiting.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-challenges">
+            <div class="challenges-header">문제 해결</div>
+            <div class="card-section">
+              <h4 class="challenge-title">학회 운영 데이터 통합</h4>
+
+              <h5 class="problem-subtitle">문제</h5>
+              <ul class="problem-list">
+                <li>
+                  노션, 구글 폼 등 여러 플랫폼에 분산된 데이터로 인한 운영
+                  비효율
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">해결 방법</h5>
+              <ul class="problem-list">
+                <li>
+                  회원·모집·신청·활동 데이터를 유기적으로 연결하는 통합 DB
+                  스키마 설계
+                </li>
+                <li>
+                  모집 공고부터 수료 처리까지의 전체 워크플로우를 웹 서비스로
+                  구현
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">결과</h5>
+              <ul class="problem-list">
+                <li>
+                  수작업으로 진행되던 반복 업무를 제거해 <strong>데이터 정합성 확보</strong>
+                </li>
+                <li>
+                  실제 학회 운영에 도입되어 매 학기 100명 이상의 회원 관리에
+                  활용 중
+                </li>
+              </ul>
+
+              <div class="device desktop" style="width: 60%; margin: 0 auto">
+                <div class="top-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="screen">
+                  <img src="img/calendar.png" />
+                </div>
+              </div>
+              <p
+                class="diagram-caption"
+                style="text-align: center; margin-top: 8px"
+              >
+                <svg
+                  class="icon icon-chev icon-chev-up"
+                  aria-hidden="true"
+                  width="14"
+                  height="14"
+                  focusable="false"
+                >
+                  <use href="#icon-chevron-up"></use>
+                </svg>
+                활동 관리 및 출석 확인 화면
+              </p>
+            </div>
+
+            <div class="card-section">
+              <h4 class="challenge-title">서비스 운영을 위한 배포 자동화</h4>
+
+              <h5 class="problem-subtitle">문제</h5>
+              <ul class="problem-list">
+                <li>
+                  잦은 기능 업데이트와 피드백 반영 과정에서 수동 배포로 인한
+                  리소스 낭비 발생
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">해결 방법</h5>
+              <ul class="problem-list">
+                <li>
+                  <strong>Docker를 활용한 일관된 실행 환경 구축</strong> 및 GitHub Actions 기반
+                  자동화 파이프라인 설계
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">결과</h5>
+              <ul class="problem-list">
+                <li>
+                  메인 브랜치 푸시 시 자동 빌드 및 무중단 배포가 이루어져 개발
+                  사이클 가속화
+                </li>
+              </ul>
+            </div>
+            <div style="align-items: center; display: flex">
+              <div class="diagram-caption-container">
+                <img
+                  src="img/cicd_pipeline.drawio.png"
+                  alt="수정 이력 다이어그램"
+                  style="width: 60%"
+                  class="diagram-img"
+                />
+
+                <p class="diagram-caption">
+                  <svg
+                    class="icon icon-chev icon-chev-up"
+                    aria-hidden="true"
+                    width="14"
+                    height="14"
+                    focusable="false"
+                  >
+                    <use href="#icon-chevron-up"></use>
+                  </svg>
+                  CI/CD 파이프라인
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- 프로젝트 1 -->
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-row">
+                <h3 class="card-title">하루 5분 주식 리포트 UPssue</h3>
+                <div class="card-link">
+                  <a
+                    href="https://github.com/catch-thema/UPssue"
+                    target="_blank"
+                    >GitHub 저장소</a
+                  >
+                </div>
+              </div>
+              <div class="card-meta">
+                <span class="card-date">2025.10–2025.12</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-badge">산학 프로젝트</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">5명</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">백엔드/프론트엔드</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">FastAPI · Kafka · RabbitMQ</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="project-layout">
+                <div class="project-info">
+                  <div class="card-section">
+                    <h4 class="subsection-title">프로젝트 개요</h4>
+                    <p class="desc-lead">
+                      UPssue는 주식 시장에서 급등·급락한 종목의 변동 원인을
+                      <br />
+                      뉴스와 데이터를 기반으로 분석해 근거 중심 AI 리포트를 자동
+                      생성하는 서비스입니다.
+                    </p>
+                  </div>
+                  <div class="card-section">
+                    <h4 class="subsection-title">주요 기능</h4>
+                    <ul class="bullet-list">
+                      <li>
+                        급등·급락 종목의 상승·하락 원인을 뉴스 근거 기반으로
+                        자동 분석
+                      </li>
+                      <li>
+                        테마 내 관련 종목의 상승 가능성 예측 및 종목 간 관계를
+                        고려한 파급력 분석
+                      </li>
+                      <li>매일 주요 경제 뉴스와 핵심 이슈 요약 리포트 제공</li>
+                    </ul>
+                  </div>
+                  <div class="card-section">
+                    <h4 class="subsection-title">기여 내용</h4>
+                    <ul class="bullet-list">
+                      <li>
+                        대용량 뉴스 수집·가공·분석·리포트 생성 흐름을
+                        파이프라인으로 설계 및 구현
+                      </li>
+                      <li>
+                        사업보고서 데이터를 활용해 종목 간 관계 그래프를
+                        구성하고 관계 정보를 반영
+                      </li>
+                      <li>
+                        일별 증시 요약 리포트 생성 흐름 설계 및 자동화 구현
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="project-media-2col">
+                  <div class="device mobile">
+                    <div class="screen">
+                      <img src="img/pj1_img_3.png" alt="모바일 화면" />
+                      <img src="img/pj1_img_4.png" alt="모바일 화면" />
+                    </div>
+                  </div>
+                  <div class="device mobile">
+                    <div class="screen">
+                      <img src="img/pj1_img_1.png" alt="모바일 화면" />
+                      <img src="img/pj1_img_2.png" alt="모바일 화면" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-challenges">
+            <div class="challenges-header">문제 해결</div>
+            <div class="card-section">
+              <h4 class="challenge-title">
+                데이터 트래픽 증가로 인한 지연과 안정성 한계
+              </h4>
+
+              <h5 class="problem-subtitle">문제</h5>
+              <ul class="problem-list">
+                <li>
+                  대량 뉴스 데이터 처리 시 순차적 파이프라인 구조로 인한 심각한
+                  병목 현상 발생
+                </li>
+                <li>
+                  파이프라인 중간 단계 오류 시 실패 지점 추적 및 부분 재처리가
+                  불가능해 비효율 촉발
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">해결 방법</h5>
+              <ul class="problem-list">
+                <li>
+                  <strong>메시지 큐(<em>Kafka, RabbitMQ</em>)를 도입</strong>해 크롤링, 분석, 임베딩 등 각
+                  작업 단계를 독립적으로 분리
+                </li>
+                <li>
+                  단계별 메시지 큐와 토픽을 정의하여 안정적인 비동기 스트리밍
+                  아키텍처 구축
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">결과</h5>
+              <ul class="problem-list">
+                <li>
+                  시스템 부하가 심한 분석 작업만 개별적으로 서버를 늘려 유연하게
+                  대응할 수 있게 됨
+                </li>
+                <li>
+                  전체 과정을 다시 실행할 필요 없이, 오류가 발생한 단계의
+                  데이터만 재처리 가능해짐
+                </li>
+              </ul>
+
+              <div class="row">
+                <div
+                  class="col-12"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 12px;
+                  "
+                >
+                  <img
+                    src="img/pipeline_img.png"
+                    alt="파이프라인 다이어그램"
+                    class="pipeline-img"
+                    style="width: 80%"
+                  />
+                  <p class="pipeline-caption">
+                    <svg
+                      class="icon icon-chev icon-chev-up"
+                      aria-hidden="true"
+                      width="14"
+                      height="14"
+                      focusable="false"
+                    >
+                      <use href="#icon-chevron-up"></use>
+                    </svg>
+                    메시지 큐 기반 비동기 처리 아키텍처
                   </p>
                 </div>
-                <div class="card-section">
-                  <h4 class="subsection-title">Key Features</h4>
-                  <ul class="bullet-list">
-                    <li>기업·사업장 단위의 배출량 데이터 관리 및 조회</li>
-                    <li>Scope(1/2/3) 기준 배출량 계산 및 시각화</li>
-                    <li>배출 데이터 일괄 입력·수정 지원</li>
-                    <li>배출량 수정 이력 추적을 통한 데이터 신뢰성 확보</li>
-                    <li>대시보드 기반의 배출 현황 요약 제공</li>
+              </div>
+            </div>
+
+            <div class="card-section">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="challenge-title">파급력 예측 맥락 부족</h4>
+
+                  <h5 class="problem-subtitle">문제</h5>
+                  <ul class="problem-list">
+                    <li>
+                      거래량 등 단순 정량 지표만으로는 특정 종목의 이슈가 연관
+                      종목으로 <strong>전파되는 과정을 파악하기 어려움</strong>
+                    </li>
+                  </ul>
+
+                  <h5 class="problem-subtitle">해결 방법</h5>
+                  <ul class="problem-list">
+                    <li>
+                      사업보고서를 바탕으로 기업 간 관계(계열사, 공급망 등)를
+                      연결한 GNN(그래프 신경망) 모델 구축
+                    </li>
+                    <li>
+                      특정 종목이 오를 때 연관된 다른 종목도 오를 가능성을 관계
+                      기반으로 예측하도록 구현
+                    </li>
+                  </ul>
+
+                  <h5 class="problem-subtitle">결과</h5>
+                  <ul class="problem-list">
+                    <li>
+                      특정 종목의 변동이 연관 종목으로 파급되는 원인과 실질적
+                      관계를 근거로 제시하여, 예측 결과의 <strong>논리적 설명력 향상</strong>
+                    </li>
                   </ul>
                 </div>
-              </div>
-
-              <div class="project-media-2col">
-                <div class="device desktop">
-                  <div class="top-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="screen">
-                    <img src="img/pj2_img_4 복사본 3.png" alt="웹 화면" />
-                  </div>
-                </div>
-                <div class="device desktop">
-                  <div class="top-bar">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="screen">
-                    <img src="img/pj2_img_4.png" alt="웹 화면" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-section">
-                <h4 class="subsection-title">My Contribution</h4>
-                <p style="margin-bottom: 0.5rem">
-                  <strong>Backend</strong>
-                </p>
-                <ul class="bullet-list" style="margin-bottom: 1rem">
-                  <li>서비스 전반의 백엔드 개발 주도</li>
-                  <li>기업·사업장·배출 데이터·계산·수정 이력에 대한 DB 설계</li>
-                  <li>배출량 계산 로직 및 관련 API 구현</li>
-                  <li>
-                    배출 데이터 수정 시 원본과 이력을 함께 관리하는 API 설계
-                  </li>
-                </ul>
-                <p style="margin-bottom: 0.5rem">
-                  <strong>Frontend</strong>
-                </p>
-                <ul class="bullet-list">
-                  <li>Handsontable 기반 배출 데이터 입력·편집 화면 구현</li>
-                  <li>
-                    Chakra UI를 활용한 메인·대시보드·기업·사업장 페이지 개발
-                  </li>
-                  <li>Chart.js를 이용한 Scope별 배출량 시각화</li>
-                </ul>
-              </div>
-
-              <div class="card-section">
-                <div>
-                  <h4 class="subsection-title">
-                    Challenge 1: 배출 데이터 수정 내역 문제
-                  </h4>
-                  <div class="problem-content">
-                    <h5 class="problem-subtitle">Problem</h5>
-                    <p class="problem-text">
-                      배출 데이터가 반복적으로 수정되지만, 누가·언제·무엇을
-                      변경했는지를 추적할 수 있는 구조가 없어 책임 소재와 감사
-                      대응이 어려웠다. 또한 잦은 수정 과정에서 원본 데이터와
-                      대시보드의 계산 결과 사이에 정합성 불일치가 발생할 위험이
-                      있었다.
-                    </p>
-
-                    <h5 class="problem-subtitle">Approach</h5>
-                    <p class="problem-text">
-                      배출 데이터를 원본 데이터와 수정 이력으로 분리된 구조로
-                      재설계하고, 모든 수정 요청 시 변경 전/후 값, 사용자,
-                      시점을 기록하도록 API를 구현했다. 수정 이후에는 배출량
-                      재계산 로직을 자동으로 호출해 원본 데이터, 이력, 대시보드
-                      값이 일관되게 유지되도록 처리 흐름을 구성했다.
-                    </p>
-
-                    <h5 class="problem-subtitle">Result</h5>
-                    <p class="problem-text">
-                      수정 내역을 명확하게 추적할 수 있는 구조가 확보되어 데이터
-                      신뢰성이 향상되었다. 원본·계산·시각화 결과가 일관되게
-                      유지되어 검증과 감사 대응이 가능한 수준의 데이터 품질을
-                      달성했다.
-                    </p>
-                  </div>
-
-                  <h4 class="subsection-title" style="margin-top: 1.5rem">
-                    Challenge 2: 대용량 테이블 입력 + 계산 구조화
-                  </h4>
-                  <div class="problem-content">
-                    <h5 class="problem-subtitle">Problem</h5>
-                    <p class="problem-text">
-                      Handsontable 기반의 엑셀 형태 입력을 통해 대량의 배출
-                      데이터를 처리해야 했고, 이를 바탕으로 Scope1·2·3 배출량
-                      계산이 이루어져야 했다. 셀 단위로 서버를 호출하거나
-                      프론트에서 계산을 수행할 경우 API 호출 과다, 계산 로직
-                      중복, 데이터 조작 가능성, 성능 저하 문제가 발생할 가능성이
-                      있었다.
-                    </p>
-
-                    <h5 class="problem-subtitle">Approach</h5>
-                    <p class="problem-text">
-                      프론트는 데이터 입력과 수정만 담당하도록 역할을 분리하고,
-                      변경된 행만 모아 한 번에 전송하는 Bulk 저장 방식으로 API를
-                      설계했다. 서버에서는 저장된 데이터를 기준으로 일괄 계산
-                      로직을 수행하며, 계산된 결과는 별도의 조회·집계 API에서
-                      사용되도록 입력–계산–조회 단계를 구조적으로 분리했다.
-                    </p>
-
-                    <h5 class="problem-subtitle">Result</h5>
-                    <p class="problem-text">
-                      대량 입력 환경에서도 안정적으로 저장·계산 처리가
-                      가능해졌고, API 호출 수 감소로 성능이 개선되었다. 계산
-                      책임을 서버로 일원화하여 로직 일관성과 데이터 신뢰성을
-                      확보했으며, 대시보드는 집계된 데이터만 조회해 빠르게
-                      렌더링되는 구조가 완성되었다.
-                    </p>
-                  </div>
-                </div>
-                <div class="diagram-container">
-                  <div class="diagram-caption-container">
+                <div
+                  class="col-6"
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                  "
+                >
+                  <div
+                    class="diagram-caption-container"
+                    style="
+                      margin: 0 auto;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    "
+                  >
                     <img
-                      src="img/pj2_img_3.png"
+                      src="img/target_subgraph.png"
                       alt="종목 관계 그래프"
                       class="diagram-img"
+                      style="width: 80%"
                     />
 
                     <p class="diagram-caption">
@@ -221,6 +626,187 @@
                       종목 관계 그래프 예시
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 프로젝트 2 -->
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-row">
+                <h3 class="card-title">ESG 배출 데이터 대시보드</h3>
+                <div class="card-link">
+                  <a
+                    href="https://github.com/esg-bitcamp-team3/front"
+                    target="_blank"
+                    >GitHub 저장소</a
+                  >
+                </div>
+              </div>
+              <div class="card-meta">
+                <span class="card-date">2025.01</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-badge">부트캠프</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">4명</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item">백엔드/프론트엔드</span>
+                <span class="card-meta-divider">·</span>
+                <span class="card-meta-item"
+                  >Next.js · Express · Handsontable · Chart.js</span
+                >
+              </div>
+            </div>
+            <div
+              class="project-media-full"
+              style="width: 80%; margin: 16px auto 32px auto"
+            >
+              <div class="device desktop">
+                <div class="top-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="screen">
+                  <img src="img/pj2_img_9.png" alt="웹 화면" />
+                </div>
+              </div>
+              <div class="device desktop">
+                <div class="screen">
+                  <img src="img/pj2_img_10.png" alt="웹 화면" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="project-layout-4060">
+                <div class="project-info">
+                  <div class="card-section">
+                    <h4 class="subsection-title">프로젝트 개요</h4>
+                    <p class="desc-lead">
+                      ESG 배출량 데이터를 기업·사업장 단위로 관리하고,
+                      <br />
+                      <strong>Scope(1/2/3) 기준 배출량 계산</strong>과 <strong>데이터 수정 이력을 추적</strong>할
+                      수 있는 ESG 대시보드 서비스입니다.
+                    </p>
+                  </div>
+                  <div class="card-section">
+                    <h4 class="subsection-title">주요 기능</h4>
+                    <ul class="bullet-list">
+                      <li>기업·사업장 단위의 배출량 데이터 관리 및 조회</li>
+                      <li><strong>Scope(1/2/3) 기준 배출량 계산</strong> 및 시각화</li>
+                      <li>대량 배출 데이터 일괄 입력 및 편집 지원</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-section">
+                <h4 class="subsection-title">기여 내용</h4>
+                <ul class="bullet-list" style="margin-bottom: 1rem">
+                  <li>
+                    기업·사업장·배출 데이터 및 수정 이력에 대한 DB 스키마 설계
+                  </li>
+                  <li>Scope 기반 배출량 계산 로직 및 관련 API 구현</li>
+                  <li>대량 배출 데이터 입력·수정 처리 API 개발</li>
+                  <li>
+                    Handsontable 기반 데이터 입력 화면 구현 및 대시보드 시각화
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="card card-challenges">
+            <div class="challenges-header">문제 해결</div>
+            <div class="card-section">
+              <h4 class="challenge-title">대량 배출 데이터 처리 구조 설계</h4>
+
+              <h5 class="problem-subtitle">문제</h5>
+              <ul class="problem-list">
+                <li>
+                  대규모 배출량 데이터의 수정 내역을 추적하기 어려워 감사(Audit)
+                  대응에 한계가 있음
+                </li>
+                <li>
+                  데이터 변경 시 연관된 Scope(1/2/3) 계산 결과와의 정합성 보장
+                  필요
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">해결 방법</h5>
+              <ul class="problem-list">
+                <li>
+                  원본 입력 데이터, 계산 결과, 수정 이력을 <strong>완전히 분리</strong>하여
+                  관리하는 아키텍처 도입
+                </li>
+                <li>
+                  수정 시점에 스냅샷을 남기는 이력 관리 API 및 비동기 재산정
+                  로직 구축
+                </li>
+              </ul>
+
+              <h5 class="problem-subtitle">결과</h5>
+              <ul class="problem-list">
+                <li>
+                  모든 변경 사항 추적 및 복원이 가능해져 엔터프라이즈급 데이터
+                  신뢰성 확보
+                </li>
+                <li>
+                  엑셀 기반 대량 데이터 일괄 입력 환경에서도 흔들림 없는 계산
+                  정합성 유지
+                </li>
+              </ul>
+
+              <div
+                class="diagram-caption-container"
+                style="
+                  width: 95%;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  margin-top: 16px;
+                "
+              >
+                <img
+                  src="img/pj2_img_1.png"
+                  alt="수정 이력 다이어그램"
+                  style="width: 100%"
+                  class="diagram-img"
+                />
+
+                <p class="diagram-caption">
+                  <svg
+                    class="icon icon-chev icon-chev-up"
+                    aria-hidden="true"
+                    width="14"
+                    height="14"
+                    focusable="false"
+                  >
+                    <use href="#icon-chevron-up"></use>
+                  </svg>
+                  수정 이력 조회 화면
+                </p>
+
+                <div class="diagram-caption-container">
+                  <img
+                    src="img/mermaid-diagram (1).png"
+                    alt="수정 이력 다이어그램"
+                    style="width: 100%"
+                    class="diagram-img"
+                  />
+
+                  <p class="diagram-caption">
+                    <svg
+                      class="icon icon-chev icon-chev-up"
+                      aria-hidden="true"
+                      width="14"
+                      height="14"
+                      focusable="false"
+                    >
+                      <use href="#icon-chevron-up"></use>
+                    </svg>
+                    배출 데이터 처리 흐름
+                  </p>
                 </div>
               </div>
             </div>
